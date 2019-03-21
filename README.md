@@ -3,20 +3,9 @@ This is a custom `regex.list` file for use with Pi-hole v4+ (FTLDNS).
 
 All commands will need to be entered via Terminal (PuTTY or your SSH client of choice) after logging in.
 
-### [OPTIONAL] Back up your existing regex list
-```
-sudo cp /etc/pihole/regex.list /etc/pihole/regex.list.bak
-```
-
-### Installation Instructions
-```
-curl -sSl https://raw.githubusercontent.com/mmotti/pihole-regex/master/install.sh | bash 
-```
-
-### Removal Instructions
-```
-curl -sSl https://raw.githubusercontent.com/mmotti/pihole-regex/master/uninstall.sh | bash
-```
+### Install
+1. `sudo vim /etc/pihole/regex.list` and paste in [regex.list](./regex.list)
+2. `sudo service pihole-FTL restart`
 
 ### Testing the regex filter
 See if you can access https://ad.pi-hole.net/
